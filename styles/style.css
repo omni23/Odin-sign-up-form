@@ -6,7 +6,8 @@
 :root {
     --green1: rgb(179, 207, 153);
     --green2: rgb(117, 151, 94);
-    --button-color: rgb(75, 96, 67);
+    --green3: rgb(75, 96, 67);
+    --green4: rgb(119, 136, 103);
 
     line-height: 1.5em;
     font-family: "Poppins", sans-serif;
@@ -67,16 +68,37 @@ h1 {
 
 .info {
     background-color: var(--green1);
-    font-weight: 600;
     font-size: 1.25rem;
     flex: 1;
-    padding: 50px 30px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.info:first-child {
     justify-content: flex-end;
-    gap: 20px;
+}
+
+.info:last-child {
+    font-size: 1rem;
+}
+
+.info:last-child > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+.info > button {
+    background-color: var(--green3);
+    color: white;
+    box-shadow: 3px 3px 5px var(--green4);
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px 40px;
 }
 
 #right-side > div:last-child {
-    box-shadow: inset 0 5px 5px rgb(119, 136, 103);
+    box-shadow: inset 0 5px 5px var(--green4);
 }
