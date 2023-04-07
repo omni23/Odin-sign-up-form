@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Troglodyte";
+    src: url("../assets/fonts/TroglodyteNf-WY44.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+:root {
+
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+#banner {
+    background-image: url("../assets/images/tropical-bg.jpg");
+    background-size: cover;
+}
+
+#banner > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Troglodyte";
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    top: 20%;
+}
+
+h1 {
+    letter-spacing: 0.12em;
+}
+
+#banner > div > img {
+    width: 40%;
+    transform: scaleX(-1);
+}
