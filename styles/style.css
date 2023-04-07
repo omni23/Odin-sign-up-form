@@ -3,16 +3,18 @@
     src: url("../assets/fonts/TroglodyteNf-WY44.ttf");
 }
 
+:root {
+    --green1: rgb(179, 207, 153);
+    --green2: rgb(117, 151, 94);
+    --button-color: rgb(75, 96, 67);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: none;
     background: none;
-}
-
-:root {
-
 }
 
 main {
