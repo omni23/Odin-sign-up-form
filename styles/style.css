@@ -7,6 +7,9 @@
     --green1: rgb(179, 207, 153);
     --green2: rgb(117, 151, 94);
     --button-color: rgb(75, 96, 67);
+
+    line-height: 1.5em;
+    font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -63,8 +66,15 @@ h1 {
 }
 
 .info {
-    flex: 1;
     background-color: var(--green1);
+    font-weight: 600;
+    font-size: 1.25rem;
+    flex: 1;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 #right-side > div:last-child {
