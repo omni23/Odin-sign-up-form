@@ -30,7 +30,10 @@ main {
 #banner {
     background-image: url("../assets/images/tropical-bg.jpg");
     background-size: cover;
+    position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -39,12 +42,22 @@ main {
     font-family: "Troglodyte";
     font-size: 2rem;
     color: white;
-    flex: 1;
+    align-self: stretch;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 20px;
+}
+
+#banner > p {
+    color: white;
+    position: absolute;
+    bottom: 40px;
+}
+
+a {
+    color: white;
 }
 
 h1 {
@@ -86,7 +99,6 @@ h1 {
 }
 
 .info:last-child > p > a {
-    color: white;
     text-decoration: none;
 }
 
