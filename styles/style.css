@@ -6,8 +6,8 @@
 :root {
     --green1: rgb(179, 207, 153);
     --green2: rgb(117, 151, 94);
-    --green3: rgb(75, 96, 67);
-    --green4: rgb(119, 136, 103);
+    --green3: rgb(50, 65, 45);
+    --green4: rgb(88, 100, 77);
 
     line-height: 1.5em;
     font-family: "Poppins", sans-serif;
@@ -78,6 +78,12 @@ h1 {
     padding: 20px;
 }
 
+#pwc-error {
+    width: max-content;
+    margin: 0 auto 20px auto;
+    color: red;
+}
+
 form {
     flex: 1;
     display: grid;
@@ -109,11 +115,11 @@ input:focus {
 }
 
 input:focus:valid {
-    border: 1px solid green;
+    border: 2px solid green;
 }
 
-input:focus:invalid {
-    border: 1px solid red;
+input:focus:invalid, .error {
+    border: 2px solid red;
 }
 
 .info {

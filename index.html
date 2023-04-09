@@ -10,7 +10,7 @@
 
   <title>Sign-up Form</title>
 
-  <script src="./js/script.js/" defer></script>
+  <script src="./js/script.js" defer></script>
 </head>
 <body>
   <main>
@@ -24,7 +24,7 @@
         on <a href="#">Unsplash</a>
       </p>
     </section>
-    <section id="right-side">
+    <section id="content">
         <div class="info">
           <p>This is not a real online service! You know
             you need something like this in your life to help
@@ -34,6 +34,7 @@
           <p>You <em>know</em> you want to</p>
         </div>
         <div id="form-container">
+          <div id="pwc-error"></div>
           <form action="" method="get" id="sign-up">
             <div>
               <label for="">FIRST NAME 
@@ -42,7 +43,6 @@
                 </strong>
               </label>
               <input type="text" id="fname" name="fname" 
-              pattern="^[a-zA-Z]+$" minlength="1" maxlength="15"
               required>
             </div>
             <div>
@@ -52,7 +52,6 @@
                 </strong>
               </label>
               <input type="text" id="lname" name="fname"
-              pattern="^[a-zA-Z]+$" minlength="1" maxlength="15"
               required>
             </div>
             <div>
@@ -66,7 +65,8 @@
             </div>
             <div>
               <label for="userphone">PHONE NUMBER</label>
-              <input type="tel" id="userphone" name="userphone">
+              <input type="tel" id="userphone" name="userphone"
+              minlength="10" maxlength="10" pattern="\d{10}">
             </div>
             <div>
               <label for="">PASSWORD 
@@ -75,7 +75,7 @@
                 </strong>
               </label>
               <input type="password" id="userpw" name="userpw"
-              required>
+              minlength="8" required>
             </div>
             <div>
               <label for="confirmpw">CONFIRM PASSWORD 
@@ -84,7 +84,7 @@
                 </strong>
               </label>
               <input type="password" id="confirmpw" name="confirmpw"
-              required>
+              minlength="8" required>
             </div>
           </form>
         </div>
