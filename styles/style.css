@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Troglodyte";
-    src: url("../assets/fonts/TroglodyteNf-WY44.ttf");
+    font-family: "StoneHinge";
+    src: url("../assets/fonts/StoneHinge-aa8m.ttf");
 }
 
 :root {
@@ -42,7 +42,7 @@ main {
 
 #banner > div {
     background-color: rgba(0, 0, 0, 0.5);
-    font-family: "Troglodyte";
+    font-family: "StoneHinge";
     font-size: 2rem;
     color: white;
     flex: 1;
