@@ -46,7 +46,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
 #banner > p {
@@ -166,8 +166,8 @@ input:focus:invalid, .error {
     }
 
     #banner > p {
-        bottom: 2px;
-        right: 2px;
+        bottom: 0;
+        left: 5px;
     }
 
     .info:last-child {
@@ -182,8 +182,8 @@ input:focus:invalid, .error {
 
     #banner > p {
         font-size: 0.6rem;
-        bottom: 2px;
-        left: 2px;
+        bottom: 0;
+        left: 5px;
     }
 
     form {
