@@ -166,8 +166,8 @@ input:focus:invalid, .error {
     }
 
     #banner > p {
-        bottom: 5px;
-        right: 5px;
+        bottom: 2px;
+        right: 2px;
     }
 
     .info:last-child {
@@ -181,9 +181,9 @@ input:focus:invalid, .error {
     }
 
     #banner > p {
-        font-size: 0.8rem;
-        bottom: 5px;
-        right: 5px;
+        font-size: 0.6rem;
+        bottom: 2px;
+        left: 2px;
     }
 
     form {
