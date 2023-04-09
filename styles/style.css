@@ -21,6 +21,10 @@
     background: none;
 }
 
+body {
+    background-color: var(--green1);
+}
+
 main {
     min-height: 100vh;
     display: grid;
@@ -122,7 +126,6 @@ input:focus:invalid, .error {
 }
 
 .info {
-    background-color: var(--green1);
     font-size: 1.25rem;
     flex: 1;
     padding: 40px 30px;
