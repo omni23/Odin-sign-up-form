@@ -78,6 +78,11 @@ h1 {
     padding: 20px;
 }
 
+#form-container > p {
+    width: max-content;
+    margin: 0 auto 20px auto;
+}
+
 form {
     flex: 1;
     display: grid;
