@@ -34,7 +34,6 @@
           <p>You <em>know</em> you want to</p>
         </div>
         <div id="form-container">
-          <div id="pwc-error"></div>
           <form action="" method="get" id="sign-up">
             <div>
               <label for="">FIRST NAME 
@@ -66,7 +65,7 @@
             <div>
               <label for="userphone">PHONE NUMBER</label>
               <input type="tel" id="userphone" name="userphone"
-              minlength="10" maxlength="10" pattern="\d{10}">
+              minlength="10" maxlength="10" pattern="^\d{10}$">
             </div>
             <div>
               <label for="">PASSWORD 

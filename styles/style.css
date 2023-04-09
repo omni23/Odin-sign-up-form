@@ -78,12 +78,6 @@ h1 {
     padding: 20px;
 }
 
-#pwc-error {
-    width: max-content;
-    margin: 0 auto 20px auto;
-    color: red;
-}
-
 form {
     flex: 1;
     display: grid;
