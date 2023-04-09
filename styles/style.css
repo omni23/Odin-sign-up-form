@@ -68,7 +68,7 @@ h1 {
     transform: scaleX(-1);
 }
 
-#right-side {
+#content {
     display: flex;
     flex-direction: column;
 }
@@ -91,16 +91,29 @@ form div {
     width: 70%;
 }
 
-form label {
+label {
     display: block;
 }
 
-form input {
+input {
     width: 100%;
     height: 30px;
+    padding: 10px;
     background-color: var(--green1);
-    box-shadow: 1px 1px 3px var(--green4);
     border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 3px 3px 5px var(--green4);
+}
+
+input:focus:valid {
+    border: 1px solid green;
+}
+
+input:focus:invalid {
+    border: 1px solid red;
 }
 
 .info {
@@ -119,6 +132,7 @@ form input {
 }
 
 .info:last-child {
+    box-shadow: inset 0 5px 5px var(--green4);
     font-size: 1rem;
 }
 
@@ -135,10 +149,6 @@ form input {
     font-weight: 600;
     font-size: 1.125rem;
     padding: 10px 40px;
-}
-
-#right-side > div:last-child {
-    box-shadow: inset 0 5px 5px var(--green4);
 }
 
 @media screen and (max-width: 950px) {
